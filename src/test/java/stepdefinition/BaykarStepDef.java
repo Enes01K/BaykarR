@@ -39,10 +39,10 @@ public class BaykarStepDef {
         logger.info("ana sayfadaki neler yapıyoruz elementi goruldu");
 
     }
-//algoritma da hata oldugunun farkindayim , ama müsait oldugum zamanlarda anca bu kadar cikti.
+
     @Then("Navbar elementlerin tiklanabilirliginin kontrolu yapilir")
     public void navbarElementlerinTiklanabilirligininKontroluYapilir() throws InterruptedException {
-        int c=0;
+      
         int j;
         for (int i = 0; i < mainPage.navbarlistoptionOne.size(); i++) {
             Actions actions = new Actions(chrome.getDriver());
